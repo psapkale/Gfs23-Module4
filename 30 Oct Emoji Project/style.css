@@ -1,0 +1,86 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+html,
+body {
+   height: 100%;
+   font-family: sans-serif;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 10px;
+   flex-direction: column;
+   overflow-x: hidden;
+}
+
+body > h1 {
+   margin: 20px 0;
+   font-size: 60px;
+}
+
+.filter__wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.filters {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.button {
+   background-color: #fdbb8f;
+   border: none;
+   padding: 10px 16px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   font-weight: bold;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 4px;
+}
+
+.button:hover {
+   background-color: #ffac75;
+}
+
+#search {
+   padding: 10px 10px 10px 32px;
+   background-image: url(https://rishavy.github.io/JavaScript-Projects/Emoji%20Project/magnifying-glass.png);
+   background-color: #ffffff;
+   background-repeat: no-repeat;
+   background-size: 20px;
+   background-position: 10px;
+   border-radius: 20px;
+   outline: none;
+   font-size: 15px;
+   border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+#container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+   margin-top: 20px;
+   padding: 0 20px;
+   flex-wrap: wrap;
+}
+
+.emoji {
+   width: 38px;
+   text-align: center;
+   font-size: 40px;
+   cursor: pointer;
+}

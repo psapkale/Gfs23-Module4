@@ -1,0 +1,47 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+html,
+body {
+   height: 100%;
+   font-family: sans-serif;
+   box-sizing: border-box;
+}
+
+body {
+   padding: 10px;
+   position: relative;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 10px;
+   flex-direction: column;
+}
+
+button:disabled {
+   cursor: not-allowed;
+}
+
+.input {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+#orderId {
+   position: absolute;
+   right: 20px;
+   font-size: 26px;
+   color: orangered;
+}
+
+#result {
+   margin-top: 40px;
+}
+
+#result img {
+   width: 300px;
+   height: 300px;
+}

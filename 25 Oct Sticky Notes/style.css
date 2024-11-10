@@ -1,0 +1,139 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+html,
+body {
+   height: 100%;
+   font-family: sans-serif;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.left {
+   width: 50%;
+   height: 100%;
+   background: #d1dce7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   flex-direction: column;
+}
+
+.input__wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+
+.input__wrapper textarea {
+   border-radius: 6px;
+   padding: 16px;
+   box-shadow: 4px 4px 10px 0px #803636;
+}
+
+.left button {
+   margin-right: 50%;
+   padding: 18px 48px;
+   border: none;
+   border-radius: 30px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   cursor: pointer;
+   moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -webkit-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+   background-size: 300% 100%;
+}
+
+.left > button:hover {
+   background-position: 100% 0;
+   moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -webkit-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+
+.left > button:focus {
+   outline: none;
+}
+
+.left > button {
+   background-image: linear-gradient(
+      to right,
+      #ed6ea0,
+      #ec8c69,
+      #f7186a,
+      #fbb03b
+   );
+   box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.right {
+   width: 50%;
+   height: 100%;
+}
+
+.right > h1 {
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+}
+
+#notes__container {
+   margin-top: 20px;
+   height: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   flex-wrap: wrap;
+   overflow-y: scroll;
+}
+
+.note {
+   position: relative;
+   width: 200px;
+   height: 200px;
+   padding: 20px 10px;
+}
+
+.note > button {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   width: 14px;
+   height: 14px;
+   border: none;
+   background-color: transparent;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+#notesNotAdded {
+   text-align: center;
+   margin-top: 100px;
+}
+
+.note {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 10px;
+   margin: 10px 0;
+   position: relative;
+   cursor: grab; /* Change cursor to indicate draggable */
+}
+
+.note.dragging {
+   opacity: 0.5; /* Make it semi-transparent while dragging */
+}
