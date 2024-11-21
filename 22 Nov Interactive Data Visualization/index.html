@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Interactive Data Visualization</title>
+   </head>
+   <body>
+      <div
+         style="
+            width: 100%;
+            height: 50vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         "
+      >
+         <canvas id="myChart"></canvas>
+      </div>
+   </body>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script>
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+         type: "bar",
+         data: {
+            labels: ["January", "February", "March", "April", "May"],
+            datasets: [
+               {
+                  label: "Monthly Sales",
+                  data: [65, 59, 80, 81, 56],
+                  borderWidth: 1,
+                  label: "Monthly Sales",
+                  backgroundColor: "rgba(75, 192, 192, 0.2)",
+                  borderColor: "rgba(75, 192, 192, 1)",
+                  opacity: 50,
+               },
+            ],
+         },
+         options: {
+            scales: {
+               y: {
+                  beginAtZero: true,
+               },
+            },
+            responsive: true,
+            plugins: {
+               title: {
+                  display: true,
+                  text: "Monthly Sales Data",
+               },
+            },
+         },
+      });
+   </script>
+</html>
