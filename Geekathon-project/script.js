@@ -55,7 +55,7 @@ function updateHistory() {
 }
 
 async function renderGoogleResponse() {
-   if (!inputText.length) {
+   if (!inputText.value.length) {
       alert("Search looks empty!!");
       return;
    }
@@ -78,7 +78,7 @@ async function renderGoogleResponse() {
 }
 
 async function renderGeminiResponse() {
-   if (!inputText.length) {
+   if (!inputText.value.length) {
       alert("Search looks empty!!");
       return;
    }
@@ -99,7 +99,7 @@ async function renderGeminiResponse() {
 }
 
 async function renderImagesResponse() {
-   if (!inputText.length) {
+   if (!inputText.value.length) {
       alert("Search looks empty!!");
       return;
    }
@@ -131,7 +131,7 @@ async function renderImagesResponse() {
 }
 
 async function renderWikipediaResponse() {
-   if (!inputText.length) {
+   if (!inputText.value.length) {
       alert("Search looks empty!!");
       return;
    }
